@@ -14,10 +14,10 @@ class TextExtractor:
         fileName = "./text/" + self.__pageTitle + ".txt"
         if not os.path.isfile(fileName):
             page = wikipedia.page(title=self.__pageTitle, pageid=self.__pageId)
-            f = open(fileName, "w")
+            f = open(fileName, "w", encoding="utf-8")
             f.write(page.content)
             f.close()
 
     def getText(self):
-        f = open("./text/" + self.__pageTitle + ".txt", "r")
+        f = open("./text/" + self.__pageTitle + ".txt", "r", encoding="utf-8")
         return f.read()
