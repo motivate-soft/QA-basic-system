@@ -43,7 +43,7 @@ def engine(originalQuestion):
 
 if __name__ == "__main__":
     arr_question = sys.argv
-    question = 'What is the capital of Romania?' # 'What is the nickname of Bucharest' # 'What is the capital of Romania?'
+    question = '' # 'What is the nickname of Bucharest' # 'What is the capital of Romania?'
     for in_, item in enumerate(arr_question):
         if in_ > 0:
             question = question + ' ' + item
